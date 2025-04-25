@@ -1,5 +1,133 @@
-this is first file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
 
-add second code
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-ne one 
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .features {
+      margin-top: 40px;
+    }
+
+    .features h2 {
+      color: #333;
+    }
+
+    .feature-item {
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    .testimonials {
+      margin-top: 60px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Test Website 🌐</h1>
+    <p>Explore features, click buttons, and enjoy a smooth experience!</p>
+  </header>
+
+  <div class="container">
+    <button onclick="showMessage()">Click Me!</button>
+    <p id="message"></p>
+
+    <div class="features">
+      <h2>✨ Features</h2>
+      <div class="feature-item">🚀 Fast and responsive design</div>
+      <div class="feature-item">📱 Mobile-friendly layout</div>
+      <div class="feature-item">🎯 Clean and minimal code</div>
+    </div>
+
+    <div class="testimonials">
+      <h2>💬 What People Say</h2>
+      <p class="testimonial">"Simple yet effective. I loved the smooth design!" - Alex</p>
+      <p class="testimonial">"Perfect for quick tests and demos. Nicely done!" - Jamie</p>
+      <p class="testimonial">"Looks great on my phone. Responsive and clean." - Taylor</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Test Website. Built with 💙 and HTML/CSS.
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "Button clicked! ✅";
+    }
+  </script>
+
+</body>
+</html>
